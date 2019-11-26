@@ -78,6 +78,7 @@
 <a href="http://yandex.ru" target="_blank">Искать Аво-кардио</a>
 <hr>
 <table border="1">
+    <caption>Фруктики</caption>
     <thead>
     <tr>
         <th>Наименование фрукта</th>
@@ -101,11 +102,77 @@
 
     </tfoot>
 </table>
+<br/>
+<table border="1">
+    <caption>Проекты by Гениальниш</caption>
+    <tr>
+        <th rowspan="5">Топовые</th>
+    </tr>
+    <tr>
+        <td>Сексуалиш</td>
+    </tr>
+    <tr>
+        <td>Детективиш</td>
+    </tr>
+    <tr>
+        <td>Фитнес-тренер</td>
+    </tr>
+    <tr>
+        <td>Кулинариш</td>
+    </tr>
+</table>
+<br/>
+<table border="1" cellspacing="0" width="100" height="100">
+    <tr>
+        <td rowspan="2"></td>
+        <td colspan="2"></td>
+        <td rowspan="2"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td colspan="3"></td>
+        <td></td>
+    </tr>
 
+
+
+</table>
 <input type="text">
 <br>
-<input type="number">
+<input type="number" name="number" min="0" max="10">
 <br>
 <input type="month">
+<p>
+    <label>Ваш любимый фрукт</label>
+    <input type="text" name="fruit" list="fruit_name"/>
+    <datalist id="fruit_name">
+        <option>Банан</option>
+        <option>Груша</option>
+        <option>Апельсин</option>
+        <option>Мандарин</option>
+        <option>Киви</option>
+    </datalist>
+</p>
+<p>
+    <label>Выберите диапазон</label>
+    <input type="range" min="0" max="50" step="10"/>
+</p>
+<p>
+    <label>Ваш любимый цвет</label>
+    <input type="color"/>
+</p>
+<p>
+    <label>Комментарий</label>
+    <textarea> </textarea>
+</p>
 </body>
 </html>

@@ -9,9 +9,17 @@
     <link rel="icon"
           type="image/jpg"
           href="avo-cardio.jpg">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        span {
+            color: green;
+            font-size: 30px;
+        }
+    </style>
 </head>
 <body>
-<h1>Всем нужен AVO-CARDIO  от Гениальниш!</h1>
+<h1>Всем нужен AVO-CARDIO от Гениальниш!</h1>
+<p><span>Текст с глобальным стилем CSS</span></p>
 <p>проект <b>Natali the Queen</b></p>
 
 <img src="avo-cardio.jpg" alt="Аво-кардио" title="авокадо тренит"/>
@@ -28,24 +36,24 @@
 <p><b>текст жирный</b></p>
 <p><em>текст курсивом</em></p>
 <a href="avo-cardio.jpg" target="_blank">
-    <img src="avo-cardio.jpg" style="height: 100px" >
+    <img src="avo-cardio.jpg" style="height: 100px">
 
 </a>
 <br>
 <a href="#ideveloper">якорь на параграф ideveloper</a>
 <ul>
-    <li>первый элемент списка </li>
-    <li>второй элемент списка </li>
-    <li> <a href="https://yandex.ru/" target="_blank">Yandex</a> ссылка на главную страницу</li>
+    <li>первый элемент списка</li>
+    <li>второй элемент списка</li>
+    <li><a href="https://yandex.ru/" target="_blank">Yandex</a> ссылка на главную страницу</li>
 </ul>
 
 <ol>
-    <li>первый элемент списка </li>
-    <li>второй элемент списка </li>
+    <li>первый элемент списка</li>
+    <li>второй элемент списка</li>
 </ol>
 
+<h2>Рецепты от Аво-кардио</h2>
 <dl>
-    <h2>Рецепты от Аво-кардио</h2>
     <dt>Рецепт бутерброда с авокадо</dt>
     <dd>Текст рецепта бутерброда с авокадо</dd>
     <dt>Рецепт яблочного пирога</dt>
@@ -56,19 +64,23 @@
 
 <ul>
     <li><a href="http://google.com" target="_blank">Ингридиенты</a></li>
+    <li>
         <ul>
             <li><a href="genialnish.html" target="_blank">авокадо</a></li>
-            <ul>
-                <li>Жесткие</li>
-                <li>Мягкие</li>
-            </ul>
+            <li>
+                <ul>
+                    <li>Жесткие</li>
+                    <li>Мягкие</li>
+                </ul>
+            </li>
 
-        <li>бананы</li>
-        <li>яблоки</li>
-        <li>мука</li>
-        <li>сметана</li>
-        <li>хлеб</li>
-    </ul>
+            <li>бананы</li>
+            <li>яблоки</li>
+            <li>мука</li>
+            <li>сметана</li>
+            <li>хлеб</li>
+        </ul>
+    </li>
     <li>время приготовления</li>
     <li>количество</li>
 </ul>
@@ -87,13 +99,13 @@
     </thead>
     <tbody>
     <tr>
-        <td>Яблоко <img src="apple.jpg" height="100" width="100"></td>
+        <td>Яблоко <img alt="Tut apple picture" src="apple.jpg" height="100" width="100"></td>
         <td>2</td>
     </tr>
-<tr>
-    <td>Банан <img src="bananas.jpg" height="100" width="100"></td>
-    <td>3</td>
-</tr>
+    <tr>
+        <td>Банан <img src="bananas.jpg" height="100" width="100"></td>
+        <td>3</td>
+    </tr>
     </tbody>
     <tfoot>
     <tr>
@@ -144,35 +156,117 @@
     </tr>
 
 
-
 </table>
-<input type="text">
-<br>
-<input type="number" name="number" min="0" max="10">
-<br>
-<input type="month">
+<form action="" method="get" enctype="multipart/form-data">
+    <p>
+        <label>Выберите диапазон</label>
+        <input type="range" min="0" max="50" step="10"/>
+    </p>
+    <fieldset>
+        <legend>Предпочтения</legend>
+        <p>
+            <label>Ваш любимый фрукт</label>
+            <input type="text" name="fruit" list="fruit_name"/>
+            <datalist id="fruit_name">
+                <option>Банан</option>
+                <option>Груша</option>
+                <option>Апельсин</option>
+                <option>Мандарин</option>
+                <option>Киви</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label>Ваш любимый цвет</label>
+            <input type="color"/>
+        </p>
+    </fieldset>
+    <fieldset>
+        <legend>Дополнительно</legend>
+        <p>
+            <label>Комментарий</label>
+            <textarea> </textarea>
+        </p>
+        <p>
+            <select name="products">
+                <optgroup label="твердые">
+                    <option>Груша</option>
+                    <option>Яблоко</option>
+                </optgroup>
+                <optgroup label="мягкие">
+                    <option selected>Банан</option>
+                    <option>Киви</option>
+                    <option>Апельсин</option>
+                    <option>Мандарин</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label>Выберите вариант</label>
+            <input type="checkbox" name="check"/>
+        </p>
+        <p>
+            <label>Выберите один или несколько вариантов:</label>
+        </p>
+        <p>
+            <label for="check1">Вариант 1</label>
+            <input type="checkbox" name="check" id="check1"/>
+        </p>
+        <p>
+            <label for="check2">Вариант 2</label>
+            <input type="checkbox" name="check" id="check2"/>
+        </p>
+        <p>
+            <label for="check3">Вариант 3</label>
+            <input type="checkbox" name="check" id="check3"/>
+        </p>
+        <p>
+            <label for="check4">Вариант 4</label>
+            <input type="checkbox" name="check" id="check4"/>
+        </p>
+
+        </p>
+        <p>
+            <label>Самый популярный фрукт:</label>
+        </p>
+        <p>
+            <label for="fruit1">Банан</label>
+            <input type="radio" name="fruit" id="fruit1"/>
+        </p>
+        <p>
+            <label for="fruit2">Апельсин</label>
+            <input type="radio" name="fruit" id="fruit2"/>
+        </p>
+        <p>
+            <label for="fruit3">Киви</label>
+            <input type="radio" name="fruit" id="fruit3"/>
+        </p>
+        <p>
+            <label for="fruit4">Манго</label>
+            <input type="radio" name="fruit" id="fruit4"/>
+        </p>
+
+    </fieldset>
+    <input type="submit" value="Отправить"/>
+    <input type="reset" value="Сбросить"/>
+
+</form>
+<p>Стоимость товара &euro;25</p>
+<p>Мой первый.......... &nbsp; &nbsp; &nbsp; &nbsp; проект </p>
+<br/>
+<audio controls="controls" loop="loop">
+    <source src="Avo-avo.aac" type="audio/aac"/>
+    <source src="Avo-avo.mp3" type="audio/mp3"/>
+    <source src="Avo-avo.ogg" type="audio/ogg"/>
+    <source src="Avo-avo.wav" type="audio/wav"/>
+</audio>
 <p>
-    <label>Ваш любимый фрукт</label>
-    <input type="text" name="fruit" list="fruit_name"/>
-    <datalist id="fruit_name">
-        <option>Банан</option>
-        <option>Груша</option>
-        <option>Апельсин</option>
-        <option>Мандарин</option>
-        <option>Киви</option>
-    </datalist>
+    <video controls="controls" poster="ава%20видео.jpg" width="500px" height="280px" loop="loop">
+        <source src="avo-video.mp4" type="video/mp4"/>
+        <source src="Avo-video.ogv" type="video/ogv"/>
+        <source src="Avo-video.webm" type="video/webm"/>
+    </video>
 </p>
-<p>
-    <label>Выберите диапазон</label>
-    <input type="range" min="0" max="50" step="10"/>
-</p>
-<p>
-    <label>Ваш любимый цвет</label>
-    <input type="color"/>
-</p>
-<p>
-    <label>Комментарий</label>
-    <textarea> </textarea>
-</p>
+
 </body>
 </html>

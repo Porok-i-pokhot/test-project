@@ -1,7 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Marck+Script&display=swap);
 @import url("font.css");
+
+@font-face {
+    font-family: b52;
+    src: url("b52.woff") format("woff"),
+    url("b52.woff2") format("woff2"),
+    url("b52.eot") format("eot"),
+    url("b52.ttf") format("ttf");
+}
+
+h2 {
+    font-family: 'Marck Script', cursive;
+}
+
 h1 {
+    font-family: b52;
     color: red;
 }
+
 p {
+    font-size: 15px;
+    margin: 0;
     color: blue;
+}
+
+.Nata {
+    font-size: 15px;
+}
+
+.cm {
+    font-size: 3cm;
+}
+
+.in {
+    font-size: 2in;
+}
+
+.pt {
+    font-size: 20pt;
+}
+
+.pc {
+    font-size: 4pc;
 }

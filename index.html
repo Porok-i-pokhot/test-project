@@ -10,12 +10,7 @@
           type="image/jpg"
           href="avo-cardio.jpg">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <style>
-        span {
-            color: green;
-            font-size: 30px;
-        }
-    </style>
+
 </head>
 <body>
 <h1>Всем нужен AVO-CARDIO от Гениальниш!</h1>
@@ -49,15 +44,15 @@
 </a>
 <br>
 <a href="#ideveloper">якорь на параграф ideveloper</a>
-<ul>
-    <li>первый элемент списка</li>
-    <li>второй элемент списка</li>
-    <li><a href="https://yandex.ru/" target="_blank">Yandex</a> ссылка на главную страницу</li>
+<ul class="list_1">
+    <li><span>первый элемент списка</span></li>
+    <li><span>второй элемент списка</span></li>
+    <li><span><a href="https://yandex.ru/" target="_blank">Yandex</a> ссылка на главную страницу</span></li>
 </ul>
 
 <ol>
-    <li>первый элемент списка</li>
-    <li>второй элемент списка</li>
+    <li><span>первый элемент списка</span></li>
+    <li><span>второй элемент списка</span></li>
 </ol>
 
 <h2>Рецепты от Аво-кардио</h2>
@@ -70,6 +65,45 @@
     <dd>Текст рецепта банановой запеканки</dd>
 </dl>
 
+<h2>Селектор идентификатора (id)</h2>
+<p id="list_1">Мой первый текстовый абзац</p>
+<p id="list_2">Мой первый текстовый абзац</p>
+<p id="list_3">Мой первый текстовый абзац</p>
+
+<h2>Селектор параметров атрибута</h2>
+<form>
+    <input type="text" name="login"/>
+    <input type="text" name="login"/>
+    <input type="password" name="pass"/>
+    <input type="submit" value="Отправить"/>
+</form>
+<h2>Контекстный селектор</h2>
+<div>
+    <p>Абзац с текстом </p>
+    <p>Абзац с текстом</p>
+</div>
+<h2>Дочерний селектор</h2>
+<div class="Genius">
+    <p>Абзац с текстом </p>
+    <div>
+        <p>Второй абзац</p>
+        <p>Третий абзац</p>
+    </div>
+</div>
+<h2>Комбинированные селекторы</h2>
+<h3>Соседние</h3>
+<div class="comb_1">
+    <p>Абзац с текстом</p>
+    <p>Следующий за абзацем текст</p>
+</div>
+
+<h3>Родственные</h3>
+<div class="comb_2">
+    <p>Абзац с текстом</p>
+        <span>Абзац</span>
+    <p>Следующий за абзацем текст</p>
+        <span>Абзац</span>
+</div>
 <ul>
     <li><a href="http://google.com" target="_blank">Ингридиенты</a></li>
     <li>
@@ -275,6 +309,19 @@
         <source src="Avo-video.webm" type="video/webm"/>
     </video>
 </p>
+
+<div class="perec_1">
+    <div class="pomidor_1"></div>
+    <div class="pomidor_2"></div>
+</div>
+<div class="perec_2"></div>
+<div class="perec_2"></div>
+
+<div class="perec_3">
+    <p>Genialnish</p>
+    <p>Sexualnish</p>
+    <p>Detektivish</p>
+</div>
 
 </body>
 </html>

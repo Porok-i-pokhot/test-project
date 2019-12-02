@@ -117,3 +117,21 @@ div {
     border: 1px solid grey;
     float: left;
 }
+.clear {
+    clear: both;
+}
+.shadow_1, .shadow_2 {
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    border: 1px solid black;
+}
+.shadow_1 {
+    background: url("avo+mops.jpg") no-repeat;
+    background-size: cover;
+}
+.shadow_2 {
+    background: url("avo+mops.jpg") no-repeat cornflowerblue;
+    background-size: 125px;
+    box-shadow: -5px 5px 4px cadetblue, -5px 5px 4px inset darkblue;
+}

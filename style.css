@@ -145,3 +145,73 @@ div {
     background: green;
 
 }
+
+.avo-animation {
+    width: 100px;
+    height: 100px;
+}
+.avo-animation:hover {
+    animation: punishme 5s;
+}
+@keyframes punishme {
+    50% {
+        border-radius: 200% 200% 150% 150%;
+        background: lightgreen;
+
+    }
+    80% {
+        border-radius: 200% 200% 150% 150%;
+        background: darkgreen;
+
+    }
+    100% {
+        border-radius: 200% 200% 150% 150%;
+        background: darkgrey;
+
+    }
+}
+
+.Tolstik {
+    width: 250px;
+    height: 250px;
+    background: url("avo-cardio.jpg");
+    background-size: cover;
+
+}
+
+.Tolstik:hover {
+    animation-duration: 3s;
+    animation-name: vrashenie;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes vrashenie {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.Tolstik2 {
+    width: 250px;
+    height: 250px;
+    background: green;
+    transition: 1s;
+}
+
+.Tolstik2:hover {
+    background: yellow;
+    width: 700px;
+}
+.Tolstik3 {
+    width: 250px;
+    height: 250px;
+    background: palevioletred;
+    transition: 1s;
+}
+
+.Tolstik3:hover {
+    transform: scale(1.5);
+}

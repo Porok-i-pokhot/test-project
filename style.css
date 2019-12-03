@@ -135,3 +135,13 @@ div {
     background-size: 125px;
     box-shadow: -5px 5px 4px cadetblue, -5px 5px 4px inset darkblue;
 }
+.avo-transition {
+    width: 100px;
+    height: 100px;
+}
+.avo-transition:hover {
+    transition: 5s;
+    border-radius: 200% 200% 150% 150%;
+    background: green;
+
+}

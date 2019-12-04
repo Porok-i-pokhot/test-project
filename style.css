@@ -172,8 +172,6 @@ div {
 }
 
 .Tolstik {
-    width: 250px;
-    height: 250px;
     background: url("avo-cardio.jpg");
     background-size: cover;
 
@@ -194,9 +192,12 @@ div {
     }
 }
 
-.Tolstik2 {
+.size-250 {
     width: 250px;
     height: 250px;
+}
+
+.Tolstik2 {
     background: green;
     transition: 1s;
 }
@@ -206,8 +207,6 @@ div {
     width: 700px;
 }
 .Tolstik3 {
-    width: 250px;
-    height: 250px;
     background: palevioletred;
     transition: 1s;
 }
@@ -215,3 +214,46 @@ div {
 .Tolstik3:hover {
     transform: scale(1.5);
 }
+
+.navedi_na_menya:hover + .naveli {
+    background: red;
+}
+
+.expandable-text {
+    display: none;
+}
+.expand:checked + .expandable-text {
+    display: block;
+}
+.Stupid p:first-letter {
+    color: red;
+    font-weight: bold;
+}
+
+.Big_love li {
+    list-style-type: none;
+    padding: 20px 20px;
+    color: fuchsia;
+}
+.Big_love li:not(.net) {
+    color: green;
+}
+.Big_love li:before {
+    content: "\2746";
+}
+.Big_love li:hover {
+    color: yellow;
+}
+.Big_love li:focus {
+    width: 150px;
+}
+form input:focus {
+    border-color: rebeccapurple;
+}
+form input:not(.fuck-off) {
+    color: red;
+}
+form :checked + label{
+    color: green;
+}
+

@@ -253,7 +253,38 @@ form input:focus {
 form input:not(.fuck-off) {
     color: red;
 }
-form :checked + label{
+form :checked + label {
     color: green;
+}
+
+.pi {
+    display: flex;
+    height: 200px;
+    border: 2px solid darkred;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+.pi-pi {
+    flex-basis: 30%;
+    border: 2px solid palevioletred;
+    min-height: 50%;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+
+}
+
+.pi-pi.p1 {
+    order: 2;
+}
+
+.pi-pi.p2 {
+    order: 1;
+}
+
+.pi-pi.p3 {
+    order: 3;
 }
 

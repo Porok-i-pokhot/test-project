@@ -263,21 +263,26 @@ form :checked + label {
     border: 2px solid darkred;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 
 
 }
 .pi-pi {
-    flex-basis: 30%;
+    flex-basis: 10%;
     border: 2px solid palevioletred;
     min-height: 50%;
     justify-content: space-around;
     align-items: center;
     display: flex;
-
+    box-sizing: border-box;
+    /*
+        todo how to make it working? flex-grow: 1;
+    */
 }
 
 .pi-pi.p1 {
     order: 2;
+
 }
 
 .pi-pi.p2 {
